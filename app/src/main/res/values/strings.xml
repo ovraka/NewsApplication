@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">News Application</string>
+    <string name="back">Back</string>
+    <string name="articles">Articles</string>
+    <string name="searchIcon">searchIcon</string>
+    <string name="search">Search</string>
+    <string name="retry">Retry</string>
+    <string name="iconBack">iconBack</string>
+    <string name="world_news">World News</string>
+    <string name="news_from_all_over_the_world">News from all over the world</string>
+    <string name="top_news">Top News</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.assignment.newsapplication.fragment.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/homeToEverything"
+            app:destination="@id/everythingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/everythingFragment"
+        android:name="com.assignment.newsapplication.fragment.everything.EverythingFragment"
+        android:label="EverythingFragment" >
+        <argument android:name="source" app:argType="com.assignment.common.entity.source.Source" app:nullable="false"/>
+        <action
+            android:id="@+id/everythingToEverythingDetail"
+            app:destination="@id/everythingFragmentDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/everythingFragmentDetail"
+        android:name="com.assignment.newsapplication.fragment.everything.EverythingFragmentDetail"
+        android:label="EverythingFragmentDetail" >
+        <argument android:name="webView" app:argType="string" app:nullable="false"/>
+    </fragment>
+</navigation>
