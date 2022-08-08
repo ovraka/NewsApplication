@@ -8,7 +8,7 @@ import com.bumptech.glide.Glide
 object Constants {
     const val DEFAULT_PAGE_SIZE = 10
     const val BASE_URL = "https://newsapi.org/v2/"
-    const val API_KEY = "d03ddf78030a497d8e2b288e33dd1741"
+    const val API_KEY = "0041ac92533c4e2994c7ba22acb4e256"
 
     fun getImageFromUrl(source: Source) =
         "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url= ${source.url} &size=128"
